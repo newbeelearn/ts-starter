@@ -1,0 +1,17 @@
+{
+  "name": "app",
+  "private": true,
+   "workspaces": ["packages/*"],
+  "version": "1.0.0",
+  "description": "starter repo for ts projects",
+  "main": "index.js",
+  "scripts": {
+    "dev:client": "npm run dev -w packages/client",
+    "build:client": "npm run build -w packages/client",
+    "test:client": "npm run test -w packages/client",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
