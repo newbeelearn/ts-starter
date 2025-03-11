@@ -1,9 +1,9 @@
-import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import useCounterStore from '@/store';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const { count, increment } = useCounterStore();
 
   return (
     <>
@@ -17,7 +17,7 @@ function App() {
       </div>
       <h1 className="text-3xl">Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={increment}>
           count is {count}
         </button>
         <p>
