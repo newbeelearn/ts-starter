@@ -13,9 +13,13 @@
     "test:client": "npm run test -w packages/client",
     "dev:server": "npm run dev -w packages/server",
     "build:server": "npm run build -w packages/server",
+    "dev:pages": "wrangler pages dev packages/client/dist/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "wrangler": "^3.112.0"
+  }
 }
